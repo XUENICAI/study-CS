@@ -25,6 +25,11 @@
   "age": 25
 }
 ```
+使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
+
+**文本加粗** 
+\*\* 正常显示星号 \*\*
+
 Here's a sentence with a footnote. [^1]
 [^1]: This is the footnote.
 ~~The world is flat.~~
@@ -32,8 +37,53 @@ Here's a sentence with a footnote. [^1]
 - [ ] Update the website
 - [ ] Contact the media
 
+
+
 # front-end
 ## Internet
+- Terminology
+  - a capitalized proper noun
+- History
+- Governance(IGF/NRO/IANA/ICANN/IETF/ISOC)
+  - The technical underpinning and standardization of the core protocols (IPv4 and IPv6) is an activity of the Internet Engineering Task Force (IETF), a non-profit organization of loosely affiliated international participants that anyone may associate with by contributing technical expertise.
+  -  ICANN coordinates the assignment of unique identifiers for use on the Internet, including domain names, IP addresses, application port numbers in the transport protocols, and many other parameters. 
+  - Regional Internet registries (RIRs) were established for five regions of the world.
+  - The Internet Society (ISOC) was founded in 1992 with a mission to "assure the open development, evolution and use of the Internet for the benefit of all people throughout the world".
+    
+- Infrastructure(DNS/HTTP/IXPs/TCP/IP/ISP/IMAP/SMTP)
+  - Service tiers服务层次
+    - At the top of the routing hierarchy are the tier 1 networks, large telecommunication companies that exchange traffic directly with each other via very high speed fiber-optic cables and governed by peering agreements. 
+    - Tier 2 and lower-level networks buy Internet transit from other providers to reach at least some parties on the global Internet, though they may also engage in peering.
+  - Access
+    - public terminals 
+    - Wi-Fi 
+    -  Hotspots
+  - Mobile communication
+- Internet Protocol Suite(TCP/IP)
+  - application layer:where communication is described in terms of the objects or data structures most appropriate for each application. (HTTP/TLS/SSL)
+  - transport layer:It provides this service with a variety of possible characteristics, such as ordered, reliable delivery (TCP), and an unreliable datagram service (UDP).
+  - internet layer:which enables computers to identify and locate each other by IP address and route their traffic via intermediate (transit) networks.
+  - link layer:Examples of that technology include Wi-Fi, Ethernet, and DSL.
+  - As user data is processed through the protocol stack, each abstraction layer adds encapsulation information at the sending host. Data is transmitted over the wire at the link level between hosts and routers. Encapsulation is removed by the receiving host. Intermediate relays update link encapsulation at each hop, and inspect the IP layer for routing purposes.
+- Applications and services(Blogs/Email/Fax/File sharing/File transfer/Games/Instant messaging/Podcasts/Shopping/Television/Voice over IP/World Wide Web search)
+  - World Wide Web
+  - Communication
+  - Data transfer
+- Social impact
+  - Users
+  - Usage
+  - social networking and entertainment
+  - electronic busniess
+  - remote work
+  - collaborative publishing
+  - politics and political revolutions
+  - philanthropy慈善
+- Security
+  - malware恶意软件
+  - Surveillance监视
+  - censorship审查制度
+- Performance
+
 ### How does the internet work?
 - [ ] wires,cables& WIFI(binary sequences of 1's and 0's are sent physically)
 - [ ] IP-IPv4-IPv6
@@ -206,7 +256,7 @@ Here's a sentence with a footnote. [^1]
 - **Shared Hosting**is similar to staying at a hotel, where all guests share the same space and most things can’t be changed for any one guest. You can’t do any makeovers to the house such as installing additional furniture etc. This is a popular option for launching small websites and is not appropriate for large-scale commercial projects.
 - **A Virtual Private Server (VPS)**is a nice step up from shared hosting. It is like an apartment in an apartment house - you have your own space and, as a benefit, you can organize it in almost any way possible. With VPS, multiple users are isolated from each other. You have neighbors, but you are not so affected by them, and you can carry out any makeovers and customizations as you like and organize your apartment in your own way.
   - At the same time, it requires good technical knowledge for server management, which may be difficult for an entry-level user.
-  - VPSBenchmarks-compare the different VPS
+  - **VPSBenchmarks**-compare the different VPS
 - Renting a detached house is comparable to hosting on a **Dedicated Server**. You have a lot of space and you can do whatever you want with it. It’s a more expensive option and best for website owners who value reliability and high performance. Since you control the entire space, you have more say over configurations and plenty of space, but it’s not worth investing in if you don’t use that space.
   - Dedicated hosting can be used for any project: intensive websites, databases, game servers, VPN, and much more.
 - **Cloud hosting8**
@@ -215,13 +265,134 @@ Here's a sentence with a footnote. [^1]
 - **Reseller hosting**
   - Reseller hosting is convenient when an amount of space purchased isn’t required, and some of the allocated resources can be shared with others for extra profit. Users share disk space, bandwidth, CPU, etc. while getting a recurring source of income. 
   - Reseller servers allow users to have more resources and greater control over the server than shared servers, so they are usually more expensive.
+- How to pick a web host
+- Let’s look at the key factors to consider when choosing a web host.
+  - Uptime (reliability)正常运行时间（可靠性）
+    - You’ll probably want your website to operate 24/7
+    - Before you decide on a host, be sure to check its uptime history.Choose a web host that guarantees a high uptime percentage — ideally 99.9% or higher.
+    - Slow access is very frustrating for dedicated visitors, and also for the website owner, when they want to upload new content.
+  - Speed and performance
+  - Security features
+    - Hackers. 
+    - Malware & viruses.
+    - Distributed denial of service (DDoS) attacks.分布式拒绝服务（DDoS）攻击。
+    - Cross-site scripting (XSS) attacks. 跨站脚本（XSS）
+    - Brute-force attacks.
+  - Customer support
+  - Cost
+    - you can expect to pay between $10 and $150 per year for shared hosting. Higher capacity hosting plans can start from $150 per year.
+    -  It’s common to offer low signup prices but then charge higher when the contract renews. Unless you are comfortable switching hosts every few years, renewal prices are unavoidable.
+  - Multiple domains hosting 
+  - Email
+  - Upgrade options
+    - It’s important to consider this when choosing quality hosting for a website or application that's expected to grow. Most new sites start on shared hosting, which can be quite powerful. However, as you plan websites to grow over the years, you might need to consider a more powerful server, such as a VPS or dedicated server, that offers more resources. Ensure your host offers plans that you can upgrade to and that the process will be as straightforward as possible.
+  - Control panel控制面板
+  - Website creation tools
+    - The most popular ones are website builders and content management systems (CMS).
+    - Website builders allow you to use an intuitive drag-and-drop editor, and there is no need for programming skills, as they include design templates and themes.
+    - One of the most popular CMSs right now is WordPress, which is known for its user-friendly interface.
+- In summary, there are different types of web hosting plans available, each suited for different needs and budgets. Shared hosting is the most affordable option, ideal for beginners with low-traffic websites. virtual private server hosting offers more power and control than shared hosting, while dedicated hosting provides the ultimate control and resources but comes with a higher price tag. Cloud hosting is a popular option for its scalability and flexibility.
+- Choosing the right web hosting plan is important for the performance, security, and growth of your website. When making your decision, consider factors like uptime reliability, speed, security features, customer support, and cost, and be sure to research different providers and plans to find the one that best suits your specific needs. 
 ### DNS and how it work
+- There are 4 DNS servers involved in loading a webpage:
+  - **The DNS recursor** is a server designed to receive queries from client machines through applications such as web browsers. Typically the recursor is then responsible for making additional requests in order to satisfy the client’s DNS query.
+  -  The root server is the first step in translating (resolving) human readable host names into IP addresses. 
+  -  The top level domain server (TLD) can be thought of as a specific rack of books in a library. 
+  - The authoritative nameserver is the last stop in the nameserver query. If the authoritative name server has access to the requested record, it will return the IP address for the requested hostname back to the DNS Recursor (the librarian) that made the initial request.
+- The 8 steps in a DNS lookup:
+  1. A user types ‘example.com’ into a web browser and the query travels into the Internet and is received by a DNS recursive resolver.
+  2. The resolver then queries a DNS root nameserver (.).
+  3. The root server then responds to the resolver with the address of a Top Level Domain (TLD) DNS server (such as .com or .net), which stores the information for its domains. When searching for example.com, our request is pointed toward the .com TLD.
+  4. The resolver then makes a request to the .com TLD.
+  5. The TLD server then responds with the IP address of the domain’s nameserver, example.com.
+  6. Lastly, the recursive resolver sends a query to the domain’s nameserver.
+  7. The IP address for example.com is then returned to the resolver from the nameserver.
+  8. The DNS resolver then responds to the web browser with the IP address of the domain requested initially.
 ### Browsers and how they work
-## HTML
-## CSS
-## JavaScript
-## GitHub
-## npm
-## react
-## Tailwind
-## Vitest
+- Introduction
+- Defining Web Browsers
+  - A web browser is an appplication used to access websites on the Internet. It is software that allows user to access and view content on the World Wide Web. A web browser acts like a translator, taking information from web aervers abd displaying it to the user as a web page.
+  ![A list of popular web browsers of today](https://www.datocms-assets.com/48294/1729620814-a-list-of-popular-web-browsers-of-today.webp?auto=format&dpr=0.5&w=1600)
+- History of Web Browsers
+  | year        | event             | Browser  |
+  | ----------- | -----------       |----------- |
+  | 1990        | First Web Browser | WorldWideWeb(Nexus) |
+  | 1991        | Wideder Accessibility| Line Mode Browser |
+  |1993	|Graphical Revolution	|Mosaic|
+  |1994	|Browser Wars Begin	|Netscape Navigator|
+  |1995 |	Competition Heats Up	|Internet Explorer (bundled with Windows)|
+  |Late 1990s-Early 2000s	|Browser Wars Intensify	|Netscape Navigator vs. Internet Explorer|
+  |2004 |	Open Source Challenge	|Firefox|
+  |2008	|Chrome Emerges	|Google Chrome|
+  |Present Day	|Diverse Landscape	|Chrome, Firefox, Safari, Edge, Opera|
+  - The diverse browser landscape of today is primarily defined by the following web browsers:
+    - Google Chrome (2008): This browser quickly gained popularity with its speed, simplicity, and tight integration with Google services. It currently holds the largest market share.
+    - Mozilla Firefox Continues to be a strong contender, known for its focus on privacy and customization options.
+    - Apple Safari (pre-installed on Apple devices): Offers a clean and integrated experience within the Apple ecosystem.
+    - Microsoft Edge (2015): The successor to Internet Explorer, Edge boasts improved performance and security features.
+    - Opera: While less dominant than others, Opera offers unique features like a built-in VPN and data compression, making it appealing for specific needs.
+  
+- How a Web Browser Works?
+  ![Outlook of how a web browser works](https://www.datocms-assets.com/48294/1729620985-outlook-of-how-a-web-browser-works.webp?auto=format&dpr=0.5&w=1600)
+  - Rendering Engine - The Web Architecture渲染引擎 - Web 架构
+    - Following are the rendering engines used by mainstream browsers:
+    - **Blink:** This engine powers Google Chrome and is known for its speed and efficiency.
+    - **WebKit:** Used in Safari (Apple devices) and other browsers, WebKit offers robust features for rendering complex webpages.
+    - **Gecko:** The engine behind Mozilla Firefox prioritizes open-source development and standards compliance.
+  - Some key components include:
+    - User Interface (UI): 
+    - Rendering Engine: 
+    - Networking Component: 
+    - JavaScript Engine: 
+    - Security Components: 
+- **Types** of Web Browsers
+  - Desktop Browsers
+    - Some popular web browsers suited for the desktop include Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari. While Chrome is lauded for its popular Google services like Gmail and Docs, Firefox provides exceptional security and add-ons. Meanwhile, Edge is fast, and Safari provides a clean browsing experience.
+  - Mobile Browsers
+  - Embedded Browsers嵌入式浏览器
+    - Email Clients: Many email clients have built-in web browsers for displaying web content within emails, such as interactive buttons or online surveys.
+    - Social Media Apps: Social media platforms often embed web browsers so users can view shared links or articles without leaving the app.
+    - Gaming Consoles: Modern gaming consoles frequently have built-in web browsers, which allow users to access online features game guides, and connect with other players.
+
+- **Features** of Modern Web Browsers
+  - Tabbed Browsing标签浏览
+  - Bookmarks书签
+  - Browsing History
+  - Downloads Manager
+  - Search Bar搜索栏
+  - User Interface (UI) Customization用户界面 (UI) 自定义
+  - Extensions and Add-Ons扩展和附加组件
+  - Synchronization同步
+    - It allows the user to synchronize their browsing data across multiple devices. It ensures an enhanced user experience if the browser is accessed on a desktop, mobile, or any other device.
+  - Hypertext Transfer Protocol (HTTPS) Support
+  - Pop-Up Blocker弹出式屏蔽器
+  - Incognito Browsing Mode匿名浏览模式
+
+- Security and Privacy in Web Browsers
+  - Hypertext Transfer Protocol Secure (HTTPS)
+  - Tracker Blocking追踪屏蔽
+    - Pop-up blockers also aid the process by preventing unwanted windows from appearing on a web page.
+  - Sandboxing沙盒拳击
+  - Plus, modern browsers allow users to manage their privacy settings. Users can block third-party cookies, manage website permissions, and clear browsing data and cache.此外，现代浏览器允许用户管理他们的隐私设置。用户可以阻止第三方 Cookie，管理网站权限，清除浏览数据和缓存。
+- Conclusion
+- Two major issues in web performance are issues having to do with latency and issues having to do with the fact that for the most part, browsers are single-threaded.
+  - Latency is the biggest threat to our ability to ensure a fast-loading page. 
+  - Render time is key, ensuring the main thread can complete all the work we throw at it and still always be available to handle user interactions. Web performance can be improved by understanding the single-threaded nature of the browser and minimizing the main thread's responsibilities, where possible and appropriate, to ensure rendering is smooth and responses to interactions are immediate.
+  ![alt text](image-1.png)
+-  how browsers work
+  - navigation
+    - DNS lookup域名系统查找
+    - TCP handshake
+    - TLS negotiation
+  - response
+    - Congestion control / TCP slow start
+  - parsing解析
+    - Parsing is the step the browser takes to turn the data it receives over the network into the DOM and CSSOM, which is used by the renderer to paint a page to the screen.
+    - The DOM is the internal representation of the markup for the browser. The DOM is also exposed and can be manipulated through various APIs in JavaScript.
+    - Building the DOM tree我们描述了关键渲染路径中的五个步骤。
+      - The first step is processing the HTML markup and building the DOM tree.
+      - The second step in the critical rendering path is processing CSS and building the CSSOM tree. 
+      - The third step in the critical rendering path is combining the DOM and CSSOM into a render tree. 
+      - The fourth step in the critical rendering path is running layout on the render tree to compute the geometry of each node. 
+      - The last step in the critical rendering path is painting the individual nodes to the screen, the first occurrence of which is called the first Meaningful Paint. 
+  
