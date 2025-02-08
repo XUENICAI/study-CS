@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>crashCourseRoadmap</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background-color: #F0FFF0;
+        color: #008080;
+      }
+      h1,h2 {
+        background-color: #FFF0F5;
+        color: #FF69B4;
+        padding: 10px;
+        border: 1px solid #FF69B4;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #FF69B4;
+        margin: 10px;
+
+      }
+     
+      
+     
+       li {
+        float:center;
+        }
+
+        li a {
+        display:block;
+       color: rgb(7, 20, 12);
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        }
+
+        li a:hover {
+        background-color: #edb1df;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>>crash course</h1>
+    <ol>
+    <li><a href="#Artifical Intelligence">Artifical Intelligence</a></li>
+    <li><a href="#Anatomy &amp; Physiology">Anatomy &amp; Physiology</a></li>
+    <li><a href="#Art History">Art History</a></li>
+    <li><a href="#Astronomy">Astronomy</a></li>
+    <li><a href="#Black American History">Black American History</a></li>
+    <li><a href="#Big History">Big History</a></li>
+    <li><a href="#Biología">Biología</a></li>
+    <li><a href="#Biology">Biology</a></li>
+    <li><a href="#Biology (2012)">Biology (2012)</a></li>
+    <li><a href="#Botany">Botany</a></li>
+    <li><a href="#Business: Entrepreneurship">Business: Entrepreneurship</a></li>
+    <li><a href="#Business: Soft Skills">Business: Soft Skills</a></li>
+    <li><a href="#Chemistry">Chemistry</a></li>
+    <li><a href="#Climate &amp; Energy">Climate &amp; Energy</a></li>
+    <li><a href="#Computer Science">Computer Science</a></li>
+    <li><a href="#Ecology">Ecology</a></li>
+    <li><a href="#Economics">Economics</a></li>
+    <li><a href="#Engineering">Engineering</a></li>
+    <li><a href="#European History">European History</a></li>
+    <li><a href="#Film Criticism">Film Criticism</a></li>
+    <li><a href="#Film History">Film History</a></li>
+    <li><a href="#Film Production">Film Production</a></li>
+    <li><a href="#Games">Games</a></li>
+    <li><a href="#Geography">Geography</a></li>
+    <li><a href="#History of Science">History of Science</a></li>
+    <li><a href="#Intellectual Property">Intellectual Property</a></li>
+    <li><a href="#Linguistics">Linguistics</a></li>
+    <li><a href="#Literature">Literature</a></li>
+    <li><a href="#Media Literacy">Media Literacy</a></li>
+    <li><a href="#World Mythology">World Mythology</a></li>
+    <li><a href="#Navigating Digital Information">Navigating Digital Information</a></li>
+    <li><a href="#Organic Chemistry">Organic Chemistry</a></li>
+    <li><a href="#Outbreak Science">Outbreak Science</a></li>
+    <li><a href="#Philosophy">Philosophy</a></li>
+    <li><a href="#Physics">Physics</a></li>
+    <li><a href="#Political Theory">Political Theory</a></li>
+    <li><a href="#Psychology">Psychology</a></li>
+    <li><a href="#Fundamentos de Química">Fundamentos de Química</a></li>
+    <li><a href="#Religions">Religions</a></li>
+    <li><a href="#Sociology">Sociology</a></li>
+    <li><a href="#Statistics">Statistics</a></li>
+    <li><a href="#Study Skills">Study Skills</a></li>
+    <li><a href="#Theater &amp; Drama">Theater &amp; Drama</a></li>
+    <li><a href="#U.S. Government &amp; Politics">U.S. Government &amp; Politics</a></li>
+    <li><a href="#U.S. History">U.S. History</a></li>
+    <li><a href="#World History">World History</a></li>
+    <li><a href="#World History II">World History II</a></li>
+    <li><a href="#Zoology">Zoology</a></li>
+    </ol>
+    <section id="Artifical Intelligence">
+        <h2>Artifical Intelligence</h2>
+    
+    </section>
+    <section id="Anatomy &amp; Physiology">
+        <h2>Anatomy &amp; Physiology</h2>   
+    
+    </section>
+    <section id="Art History">
+        <h2>Art History</h2>
+    
+    </section>
+    <section id="Astronomy">
+        <h2>Astronomy</h2>
+    
+    </section>
+    <section id="Black American History">
+        <h2>Black American History</h2>
+    
+    </section>
+    <section id="Big History">
+        <h2>Big History</h2>
+
+    
+    </section>
+    <section id="Biología">
+        <h2>Biología</h2>
+    
+    </section>
+    <section id="Biology">
+        <h2>Biology</h2>
+    
+    </section>
+    <section id="Biology (2012)">
+        <h2>Biology (2012)</h2>
+    
+    </section>
+    <section id="Botany">
+        <h2>Botany</h2>
+
+    
+    </section>
+    <section id="Business: Entrepreneurship">
+        <h2>Business: Entrepreneurship</h2>
+    
+    </section>
+    <section id="Business: Soft Skills">
+        <h2>Business: Soft Skills</h2>
+    
+    </section>
+    <section id="Chemistry">
+        <h2>Chemistry</h2>
+    </section>
+    <section id="Climate &amp; Energy">
+        <h2>Climate &amp; Energy</h2>
+        
+    </section>
+    <section id="Computer Science">
+        <h2>Computer Science</h2>
+        
+    </section>
+    <section id="Ecology">
+        <h2>Ecology</h2>
+        
+    </section>
+    <section id="Economics">
+        <h2>Economics</h2>
+        
+        
+    </section>
+    <section id="Engineering">
+        <h2>Engineering</h2>
+        
+    </section>
+    <section id="European History">
+        <h2>European History</h2>
+        
+    </section>
+    <section id="Film Criticism">
+        <h2>Film Criticism</h2>
+        
+    </section>
+    <section id="Film History">
+        <h2>Film History</h2>
+        
+    </section>
+    <section id="Film Production">
+        <h2>Film Production</h2>
+        
+    </section>
+    <section id="Games">
+        <h2>Games</h2>
+        
+    </section>
+    <section id="Geography">
+        <h2>Geography</h2>
+        
+    </section>
+    <section id="History of Science">
+        <h2>History of Science</h2>
+        
+    </section>
+    <section id="Intellectual Property">
+        <h2>Intellectual Property</h2>
+        
+    </section>
+    <section id="Linguistics">
+        <h2>Linguistics</h2>
+        
+    </section>
+    <section id="Literature">
+        <h2>Literature</h2>
+        
+    </section>
+    <section id="Media Literacy">
+        <h2>Media Literacy</h2>
+        
+    </section>
+    <section id="World Mythology">
+        <h2>World Mythology</h2>
+        
+    </section>
+    <section id="Navigating Digital Information">
+        <h2>Navigating Digital Information</h2>
+        
+    </section>
+    <section id="Organic Chemistry">
+        <h2>Organic Chemistry</h2>
+        
+    </section>
+    <section id="Outbreak Science">
+        <h2>Outbreak Science</h2>
+        
+    </section>
+    <section id="Philosophy">
+        <h2>Philosophy</h2>
+        
+    </section>
+    <section id="Physics">
+        <h2>Physics</h2>
+        
+    </section>
+    <section id="Political Theory">
+        <h2>Political Theory</h2>
+        
+    </section>
+    <section id="Psychology">
+        <h2>Psychology</h2>
+
+        
+    </section>
+    <section id="Fundamentos de Química">
+        <h2>Fundamentos de Química</h2>
+        
+    </section>
+    <section id="Religions">
+        <h2>Religions</h2>
+        
+    </section>
+    <section id="Sociology">
+        <h2>Sociology</h2>
+        
+    </section>
+    <section id="Statistics">
+        <h2>Statistics</h2>
+        
+    </section>
+    <section id="Study Skills">
+        <h2>Study Skills</h2>
+        
+    </section>
+    <section id="Theater &amp; Drama">
+        <h2>Theater &amp; Drama</h2>
+        
+        
+    </section>
+    <section id="U.S. Government &amp; Politics">
+        <h2>U.S. Government &amp; Politics</h2>
+        
+        
+    </section>
+
+    <section id="U.S. History">
+        <h2>U.S. History</h2>
+        
+        
+    </section>
+
+    <section id="World History">
+        <h2>World History</h2>
+        
+        
+    </section>
+    <section id="World History II">
+        <h2>World History II</h2>
+        
+        
+    </section>
+    <section id="Zoology">
+        <h2>Zoology</h2>
+        
+        
+    </section>
+    
+
+
+  </body>
+</html>
