@@ -1,195 +1,1108 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- TODO: 检查代码https://validator.w3.org/-->
-<!--free image resource https://unsplash.com/   pexels.com   gratisography.com  pixabay.com tinypng.com -->
+  <!-- TODO: 检查代码https://validator.w3.org/-->
+  <!--free image resource https://unsplash.com/   pexels.com   gratisography.com  pixabay.com tinypng.com -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="description" content="This page contains all the things I am learning how to create as I learn CSS">
-  <meta name="author" content="shirley">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS study</title>
-  <link rel="stylesheet" href="3-styles.css" type="text/css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta
+      name="description"
+      content="This page contains all the things I am learning how to create as I learn CSS"
+    />
+    <meta name="author" content="shirley" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS study</title>
+    <link rel="stylesheet" href="3-styles.css" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap 3 Icons:<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/9e53b514fe.js" crossorigin="anonymous"></script>
+  
+  </head>
+
+  <body>
+    <buttom class="back"><a href="#">Back to top</a></buttom>
+    <header>
+      <h1>&lt;&lt;&nbsp;&copy;CSS study &gt;&gt;</h1>
+
+      <nav aria-label="Main-Navigation">
+        <ul>
+          <li><a class="active" href="1-fronter-internet.md">HTML Study</a></li>
+          <li><a href="#Introduction">CSS Introduction</a></li>
+          <li><a href="#Syntax">CSS Syntax</a></li>
+          <li><a href="#Selectors">CSS Selectors</a></li>
+          <li><a href="#CSSHowToAdd">CSS How To Add</a></li>
+          <li><a href="#Colors">CSS Colors</a></li>
+          <li><a href="#Backgrounds">CSS Backgrounds</a></li>
+          <li><a href="#Borders">CSS Borders</a></li>
+          <li><a href="#Margins">CSS Margins</a></li>
+          <li><a href="#Padding">CSS Padding</a></li>
+          <li><a href="#Height">CSS Height, Width and Max-width</a></li>
+          <li><a href="#BoxModel">CSS Box Model</a></li>
+          <li><a href="#Outline">CSS Outline</a></li>
+          <li><a href="#Text">CSS Text</a></li>
+          <li><a href="#Fonts">CSS Fonts	&#128508;</a></li>
+          <li><a href="#Icons">CSS Icons</a></li>
+          <li><a href="#Links">CSS Links</a></li>
 
 
-<body>
-  <buttom class="back"><a href="#">Back to top</a></buttom>
-  <header>
-    <h1>&lt;&lt;&nbsp;&copy;CSS study &gt;&gt;</h1>
+          <li><a href="#Outline">CSS Outline</a></li>
 
 
-    <nav aria-label="Main-Navigation">
-      <ul>
-        <li><a class="active" href="1-fronter-internet.md">HTML Study</a></li>
-        <li><a href="#Introduction">CSS Introduction</a></li>
-        <li><a href="#Syntax">CSS Syntax</a></li>
-        <li><a href="#Selectors">CSS Selectors</a></li>
-        <li><a href="#CSSHowToAdd">CSS How To Add</a></li>
-      </ul>
-    </nav>
-    
+        </ul>
+      </nav>
+    </header>
 
-  </header>
+    <main>
+      <!--span and div no meaning-->
+      <div class="h2" id="Introduction">
+        <hr />
+        <h2>CSS Introduction</h2>
+        <div>
+          <h3>What is CSS?</h3>
+          <p>
+            <abbr title="Cascading Style Sheets">CSS</abbr> stands for Cascading
+            Style Sheets. <br /><br />CSS describes how HTML elements are to be
+            displayed on screen, paper, or in other media. <br /><br />CSS saves
+            a lot of work. It can control the layout of multiple web pages all
+            at once. External stylesheets are stored in CSS files.
+          </p>
+        </div>
+      </div>
 
+      <div class="h2" id="Syntax">
+        <hr />
+        <h2>CSS Syntax</h2>
+        <figure>
+          <img
+            src="imgcss/css_1.gif"
+            alt="CSS Syntax"
+            title="CSS Syntax"
+            loading="lazy"
+          />
+          <figcaption>Figure 1</figcaption>
+        </figure>
+        <a href="imgcss/css_1.gif" download>download this picture</a>
+      </div>
 
-  <main>
-    <!--span and div no meaning-->
-    <div class="h2" id="Introduction">
-      <hr>
-      <h2>CSS Introduction</h2>
-      <div>
-        <h3>What is CSS?</h3>
-        <p><abbr title="Cascading Style Sheets">CSS</abbr> stands for Cascading Style Sheets.
-          <br><br>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
-          <br><br>CSS saves a lot of work. It can control the layout of multiple web pages all at once. External
-          stylesheets are stored in CSS files.
+      <div class="h2" id="Selectors">
+        <hr />
+        <h2>CSS Selectors</h2>
+        <div>
+          <h3>What is a CSS Selector?</h3>
+          <p>
+            CSS selectors are used to "find" (or select) the HTML elements you
+            want to style.
+          </p>
+          <p>We can divide CSS selectors into five categories:</p>
+          <ul>
+            <li>
+              Simple selectors (select elements based on<b> name, #id, .class</b
+              >)
+            </li>
+            <li>
+              Combinator selectors (select elements based on a specific
+              relationship between them)
+            </li>
+            <li>
+              Pseudo-class selectors (select elements based on a certain state)
+            </li>
+            <li>
+              Pseudo-elements selectors (select and style a part of an
+              <b>element</b>)
+            </li>
+            <li>
+              Attribute selectors (select elements based on an attribute or
+              attribute value)
+            </li>
+          </ul>
+          <table>
+            <caption>
+              CSS Selectors
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Selector</th>
+                <th scope="col">Example</th>
+                <th scope="col">Example description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Element</td>
+                <td>p</td>
+                <td>Selects all <b>p</b> elements</td>
+              </tr>
+              <tr>
+                <td>#id</td>
+                <td>#firstname</td>
+                <td>Selects the element with <b>id="firstname"</b></td>
+              </tr>
+              <tr>
+                <td>.class</td>
+                <td>.intro</td>
+                <td>Selects all elements with <b>class="intro"</b></td>
+              </tr>
+              <tr>
+                <td>*</td>
+                <td>*</td>
+                <td>Selects all elements</td>
+              </tr>
+              <tr>
+                <td>selector1, selector2, selectorN</td>
+                <td>h1, h2, h3</td>
+                <td>Selects all <b>h1, h2, h3</b> elements</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <td colspan="3">Table footer</td>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <div class="h2" id="CSSHowToAdd">
+        <hr />
+        <h2>CSS How To Add</h2>
+        <div>
+          <h3>How to add CSS</h3>
+          <p>There are three ways of inserting a style sheet:</p>
+          <ul>
+            <li>External CSS</li>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h2" id="Colors">
+        <hr />
+        <h2>CSS Colors</h2>
+        <p>
+          <a
+            href="http://127.0.0.1:3000/frontend-developer-study/2-fronter-html.html/#HTMLColors"
+            >Jump to HTML Colors</a
+          >
         </p>
+        <div>
+          <h3>Colors</h3>
+          <p>
+            <em
+              >Colors are specified using predefined color names, RGB, HEX, HSL,
+              RGBA, HSLA values.</em
+            >
+          </p>
+        </div>
       </div>
-      
 
-    </div>
+      <div class="h2" id="Backgrounds">
+        <hr />
+        <h2>CSS Backgrounds</h2>
+        <div>
+          <h3>Backgrounds</h3>
+          <p>
+            In these chapters, you will learn about the following CSS background
+            properties:
+          </p>
+          <dl>
+            <dt>background-color</dt>
+            <dd>a color is most often specified by:</dd>
+            <dd>a valid color-like"red"</dd>
+            <dd>a HEX value-like"#ff0000"</dd>
+            <dd>an RGB value-like"rgb(255,0,0)</dd>
 
+            <dt>background-image</dt>
+            <dd>:url("paper.gif");</dd>
+            <dt>background-repeat</dt>
+            <dd>: no-repeat;</dd>
+            <dd>To repeat an image horizontally: repeat-x;</dd>
+            <dd>To repeat an image vertically,: repeat-y;</dd>
+            <dt>background-attachment</dt>
+            <dd>: fixed;</dd>
+            <dd>: scroll;</dd>
+            <dt>background-position</dt>
+            <dd>: right top;</dd>
+            <dt>the shorthand property</dt>
+            <dd>
+              <b
+                >background: #ffffff url("img_tree.png") no-repeat right top;
+              </b>
+            </dd>
+          </dl>
+          <p>Result with opacity:</p>
 
-    <div class="h2" id="Syntax">
-      <hr>
-      <h2>CSS Syntax</h2>
-      <figure>
-        <img src="imgcss/css_1.gif" alt="CSS Syntax" title="CSS Syntax" loading="lazy">
-        <figcaption>Figure 1</figcaption>
-      </figure>
-      <a href="imgcss/css_1.gif" download>download this picture</a>
-    </div>
+          <div style="opacity: 0.1; background: rgb(0, 128, 0)">
+            <h1>10% opacity</h1>
+          </div>
 
+          <div style="opacity: 0.3; background: rgb(0, 128, 0)">
+            <h1>30% opacity</h1>
+          </div>
 
-    <div class="h2" id="Selectors">
-      <hr>
-      <h2>CSS Selectors</h2>
-      <div>
-        <h3>What is a CSS Selector?</h3>
-        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
-        <p>We can divide CSS selectors into five categories:</p>
-        <ul>
-          <li>Simple selectors (select elements based on<b> name, #id, .class</b>)</li>
-          <li>Combinator selectors (select elements based on a specific relationship between them)</li>
-          <li>Pseudo-class selectors (select elements based on a certain state)</li>
-          <li>Pseudo-elements selectors (select and style a part of an <b>element</b>)</li>
-          <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+          <div style="opacity: 0.6; background: rgb(0, 128, 0)">
+            <h1>60% opacity</h1>
+          </div>
+          <div style="background: rgb(0, 128, 0)">
+            <h1>opacity 1</h1>
+          </div>
 
-        </ul>
-        <table>
-          <caption>CSS Selectors</caption>
-          <thead>
-            <tr>
-              <th scope="col">Selector</th>
-              <th scope="col">Example</th>
-              <th scope="col">Example description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Element</td>
-              <td>p</td>
-              <td>Selects all <b>p</b> elements</td>
-            </tr>
-            <tr>
-              <td>#id</td>
-              <td>#firstname</td>
-              <td>Selects the element with <b>id="firstname"</b></td>
-            </tr>
-            <tr>
-              <td>.class</td>
-              <td>.intro</td>
-              <td>Selects all elements with <b>class="intro"</b></td>
-            </tr>
-            <tr>
-              <td>*</td>
-              <td>*</td>
-              <td>Selects all elements</td>
-            </tr>
-            <tr>
-              <td>selector1, selector2, selectorN</td>
-              <td>h1, h2, h3</td>
-              <td>Selects all <b>h1, h2, h3</b> elements</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <td colspan="3">Table footer</td>
-          </tfoot>
-        </table>
+          <p>Result with rgba():</p>
+          <div style="background: rgba(0, 128, 0, 0.1)">
+            <h1>10% opacity</h1>
+          </div>
 
-      </div>
-    </div>
+          <div style="background: rgba(0, 128, 0, 0.3)">
+            <h1>30% opacity</h1>
+          </div>
 
+          <div style="background: rgba(0, 128, 0, 0.6)">
+            <h1>60% opacity</h1>
+          </div>
+          <div style="background: rgba(0, 128, 0, 1)">
+            <h1>opacity 1</h1>
+          </div>
+        </div>
 
-    <div class="h2" id="CSSHowToAdd">
-      <hr>
-      <h2>CSS How To Add</h2>
-      <div>
-        <h3>How to add CSS</h3>
-        <p>There are three ways of inserting a style sheet:</p>
-        <ul>
-          <li>External CSS</li>
-          <li>Internal CSS</li>
-          <li>Inline CSS</li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="h2" id="Colors">
-      <hr>
-      <h2>CSS Colors</h2>
-      <p><a href="http://127.0.0.1:3000/frontend-developer-study/2-fronter-html.html/#HTMLColors">Jump to HTML
-          Colors</a></p>
-      <div>
-        <h3>Colors</h3>
-        <p><em>Colors are specified using predefined color names, RGB, HEX, HSL, RGBA, HSLA values.</em></p>
-      </div>
-    </div>
-
-
-    <div class="h2" id="Backgrounds">
-      <hr>
-      <h2>CSS Backgrounds</h2>
-      <div>
-        <h3>Backgrounds</h3>
-        <p>In these chapters, you will learn about the following CSS background properties:</p>
-        <dl>
-          <dt>background-color</dt>
-          <dd>gggggggg</dd>
-          <dt>background-image</dt>
-          <dd>hh</dd>
-          <dt>background-repeat</dt>
-          <dd>hh</dd>
-          <dt>background-attachment</dt>
-          <dd>hh</dd>
-          <dt>background-position</dt>
-          <dd>hh</dd>
-        </dl>
-      </div>
-      <aside>
+        <!-- <aside>
         <details>
           <summary>More about backgrounds</summary>
           <p>More about backgrounds</summary>
           </p>
         </details>
-      </aside>
-    </div>
-  </main>
+      </aside> -->
+      </div>
+
+      <div class="h2" id="Borders">
+        <hr />
+        <h2>CSS Borders</h2>
+
+        <div>
+          <h3>CSS Border Style</h3>
+          <p style="border-style: dotted">A dotted border.</p>
+          <p style="border-style: dashed">A dashed border.</p>
+          <p style="border-style: solid">A solid border.</p>
+          <p style="border-style: double">A double border.</p>
+          <p style="border-style: groove">A groove border.</p>
+          <p style="border-style: ridge">A ridge border.</p>
+          <p style="border-style: inset">An inset border.</p>
+          <p style="border-style: outset">An outset border.</p>
+          <p style="border-style: none">No border.</p>
+          <p style="border-style: hidden">A hidden border.</p>
+          <p style="border-style: dotted dashed solid double">
+            A mixed border.
+          </p>
+          <p
+            style="
+              border-top-style: dotted;
+              border-right-style: solid;
+              border-bottom-style: dotted;
+              border-left-style: solid;
+            "
+          >
+            A mixed border.
+          </p>
+        </div>
+
+        <div>
+          <h3>CSS Border Width</h3>
+          <p style="border-style: dotted; border-width: 5px">
+            A dotted border.
+          </p>
+          <p style="border-style: dashed; border-width: medium">
+            A dashed border.
+          </p>
+          <p style="border-style: solid; border-width: 2px">A solid border.</p>
+          <p style="border-style: double; border-width: thick">
+            A double border.
+          </p>
+          <p style="border-style: groove; border-width: 15px">
+            A groove border.
+          </p>
+          <p style="border-style: ridge; border-width: thick">
+            A ridge border.
+          </p>
+          <p style="border-style: solid; border-width: 5px 20px">Some text.</p>
+          <p style="border-style: solid; border-width: 20px 5px">Some text.</p>
+          <p
+            style="
+              border-style: solid;
+              border-width: solid;
+              border-width: 25px 10px 4px 35px;
+            "
+          >
+            Some text.
+          </p>
+        </div>
+
+        <div>
+          <h3>CSS Border Color</h3>
+          <p style="border-style: dotted; border-color: hsl(131, 80%, 60%)">
+            A dotted border.
+          </p>
+          <p style="border-style: dashed; border-color: #ff0000">
+            A dashed border.
+          </p>
+          <!--red top, green right, blue bottom and yellow left -->
+          <p style="border-style: solid; border-color: red green blue yellow">
+            A solid border.
+          </p>
+        </div>
+
+        <div>
+          <h3>CSS Border - Shorthand Property</h3>
+          <p style="border: 5px solid red">border: width style color;.</p>
+        </div>
+
+        <div>
+          <h3>CSS Rounded Borders</h3>
+          <p style="border: 2px solid red">border-radius: 0px;Normal border</p>
+          <p style="border: 2px solid red; border-radius: 5px">
+            border-radius: 5px;Round border
+          </p>
+          <p style="border: 2px solid red; border-radius: 10px">
+            border-radius: 10px;Rounder border
+          </p>
+          <p style="border: 2px solid red; border-radius: 15px">
+            border-radius: 15px;Roundest border
+          </p>
+        </div>
+      </div>
+
+      <div class="h2" id="Margins">
+        <hr />
+        <h2>CSS Margins</h2>
+
+        <div>
+          <h3>Margin - Individual Sides</h3>
+          <div style="margin: 70px; border: 1px solid #4caf50">
+            This element has a margin of 70px.
+          </div>
+
+          <p>
+            The CSS margin properties are used to create space around elements,
+            outside of any defined borders.
+          </p>
+          <p>
+            With CSS, you have full control over the margins. There are
+            properties for setting the margin for each side of an element (top,
+            right, bottom, and left).
+          </p>
+          <p>All the margin properties can have the following values:</p>
+          <ul>
+            <li><b>auto</b> - the browser calculates the margin</li>
+            <li><b>length</b> - specifies a margin in px, pt, cm, etc.</li>
+            <li>
+              <b>% </b>- specifies a margin in % of the width of the containing
+              element
+            </li>
+            <li>
+              <b>inherit</b> - specifies that the margin should be inherited
+              from the parent element
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Margin Collapse</h3>
+          <p>margin: 0 0 50px 0;</p>
+        </div>
+      </div>
+
+      <div class="h2" id="Padding">
+        <hr />
+        <h2>CSS Padding</h2>
+        <div>
+          <h3>Padding</h3>
+          <div style="padding: 70px; border: 1px solid #4caf50">
+            This element has a padding of 70px.
+          </div>
+          <p>All the padding properties can have the following values:</p>
+          <ul>
+            <li><b>length</b> - specifies a padding in px, pt, cm, etc.</li>
+            <li>
+              <b>% </b>- specifies a padding in % of the width of the containing
+              element
+            </li>
+            <li>
+              <b>inherit</b> - specifies that the padding should be inherited
+              from the parent element
+            </li>
+          </ul>
+
+          <p><em>Use the padding shorthand property with four values:</em></p>
+          <p>padding: top right bottom left;</p>
+        </div>
+        <div>
+          <h3>Padding and Element Width</h3>
+          <p>
+            The CSS width property specifies the width of the element's content
+            area. The content area is the portion inside the padding, border,
+            and margin of an element (the box model).
+          </p>
+          <p>
+            To keep the width at 300px, no matter the amount of padding, you can
+            use the <b>box-sizing : border-box</b>property. This causes the
+            element to maintain its actual width; if you increase the padding,
+            the available content space will decrease.
+          </p>
+        </div>
+      </div>
+
+      <div class="h2" id="Height">
+        <hr />
+        <h2>CSS Height, Width and Max-width</h2>
+        <div style="height: 50px; width: 100%; border: 1px solid #4caf50">
+          This div element has a height of 50 pixels and a width of 100%.
+        </div>
+        <div
+          style="
+            margin-top: 50px;
+            min-width: 300px;
+            max-width: 500px;
+            border: 1px solid #4caf50;
+          "
+        >
+          This div element has a height of 50 pixels a <b>min-width</b> of
+          300px, and a <b>max-width</b> of 500px.
+        </div>
+
+        <div>
+          <h3>CSS height and width</h3>
+          <p>The height and width properties may have the following values:</p>
+          <ul>
+            <li>
+              <b>auto</b> - This is default. The browser calculates the height
+              and width
+            </li>
+            <li><b>length</b> - Defines the height/width in px, cm, etc.</li>
+            <li>
+              <b>% </b>- Defines the height/width in percent of the containing
+              block
+            </li>
+            <li><b>initial </b>- Sets the height/width to its default value</li>
+            <li>
+              <b>inherit</b> - The height/width will be inherited from its
+              parent value
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h2" id="BoxModel">
+        <hr />
+        <h2>CSS Box Model</h2>
+        <div>
+          <h3>The CSS Box Model</h3>
+          <p>
+            <em
+              >The CSS box model is essentially a box that wraps around every
+              HTML element. It consists of: content, padding, borders and
+              margins. The image below illustrates the box model:</em
+            >
+          </p>
+          <div
+            style="
+              width: 350px;
+              height: 80px;
+              margin: 15px;
+              border: 5px solid #4caf50;
+              padding: 15px;
+            "
+          >
+            This &lt;div> element will have a total width of 350px and a total
+            height of 80px
+          </div>
+        </div>
+      </div>
+
+      <div class="h2" id="Outline">
+        <hr />
+        <h2>CSS Outline</h2>
+        <div>
+          <h3>Outline</h3>
+          <div
+            style="
+              width: 350px;
+              height: 80px;
+              outline-offset: 5px;
+              outline: #4caf50 dashed 10px;
+              margin: 15px;
+              border: 5px solid black;
+              padding: 15px;
+            "
+          >
+            This element has a black border and a green outline with a width of
+            10px and a outline-offset of 5px.
+          </div>
+          <p>
+            <em
+              >An outline is a line that is drawn around elements, OUTSIDE the
+              borders, to make the element "stand out".</em
+            >
+          </p>
+          <p>CSS has the following outline properties:</p>
+          <ul>
+            <li><b>outline-style</b></li>
+            <li><b>outline-color</b>-name , HEX , RGB , HSL , invert</li>
+            <li>
+              <b>outline-width</b>- <mark>thin</mark> (typically 1px)
+              <mark>medium</mark> (typically 3px) <mark>thick</mark> (typically
+              5px) A specific size (in px, pt, cm, em, etc)
+            </li>
+            <li>
+              <b>outline-offset </b>- adds space between an outline and the
+              edge/border of an element. The space between an element and its
+              outline is transparent.
+            </li>
+            <li><b>outline</b> - outline: width style color;</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h2" id="Text">
+        <hr />
+        <h2>CSS Text</h2>
+        <div>
+          <h3>Text Color/Text Background Color</h3>
+          <p>The color property is used to set the color of the text. </p>
+          
+          <h3>Text Alignment and Text Direction</h3>
+          <p>In this chapter you will learn about the following properties:</p>
+          <ul>
+            <li><b>text-align</b>-text-align: center;left;right;justify;
+            </li>
+
+            <li><b>text-align-last</b>-specifies how to align the last line of a text.</li>
+            <li>
+              <b>direction&unicode-bidi</b>- The direction and unicode-bidi properties can be used to change the text direction of an element:
+            <code>p {
+              direction: rtl;
+              unicode-bidi: bidi-override;
+            }</code>
+            </li>
+            <li><b>vertical-align
+            </b> - sets the vertical alignment of an element.</li>
+          </ul>
+
+          <div>
+            <h5>vertical-align: baseline (default):</h5>
+            <p>An <img style="vertical-align: baseline;" src="imgcss/sqpurple.gif" width="9" height="9"> image with a default
+              alignment.</p>
+          
+            <h5>vertical-align: text-top:</h5>
+            <p>An <img style="vertical-align: text-top;" src="imgcss/sqpurple.gif" width="9" height="9"> image with a text-top
+              alignment.</p>
+          
+            <h5>vertical-align: text-bottom:</h5>
+            <p>An <img style="vertical-align: text-bottom;" src="imgcss/sqpurple.gif" width="9" height="9"> image with a
+              text-bottom alignment.</p>
+          
+            <h5>vertical-align: sub:</h5>
+            <p>An <img style="vertical-align:sub;" src="imgcss/sqpurple.gif" width="9" height="9"> image with a sub alignment.</p>
+          
+            <h5>vertical-align: sup:</h5>
+            <p>An <img style="vertical-align: super;" src="imgcss/sqpurple.gif" width="9" height="9"> image with a super
+              alignment.</p>
+          </div>
+        
+          <h3>Text Decoration</h3>
+          <p>In this chapter you will learn about the following properties:</p>
+          <ul>
+            <li><b>text-decoration-line</b>-overline;line-through;underline;overline underline;
+            </li>
+
+            <li><b>text-decoration-color</b></li>
+            <li>
+              <b>text-decoration-style</b>- solid;double;dotted;dashed;wavy;
+            
+            </li>
+            <li><b>text-decoration-thickness
+            </b> -auto; 5px; 25%;</li>
+            <li><b>text-decoration
+
+            </b> -text-decoration-line (required)//text-decoration-color (optional)//text-decoration-style (optional)//text-decoration-thickness (optional)</li>
+          </ul>
+          <div>
+          <p style="text-decoration: overline red solid 2px;">Overline text decoration</p>
+          <p style="text-decoration: line-through red double 2px;">Line-through text decoration</p>
+          <p style="text-decoration: underline red dashed 2px;">Underline text decoration</p>
+          <p style="text-decoration: overline underline red wavy 2px;">Overline and underline text decoration.</p>
+          </div>
+
+          <h3>Text Transformation</h3>
+          <p style="text-transform:uppercase;">This text is transformed to uppercase.</p>
+          <p style="text-transform:lowercase;">This text is transformed to lowercase.</p>
+          <p style="text-transform:capitalize;">This text is capitalized.</p>
+
+          <h3>Text Spacing</h3>
+          <p>In this chapter you will learn about the following properties:</p>
+          <ul>
+            <li style=" text-indent: 50px;"><b>text-indent</b>-to specify the indentation of the first line of a text
+            </li>
+
+            <li style=" letter-spacing: -2px;"><b>letter-spacing</b>-to specify the space between the characters in a text.</li>
+            <li style=" line-height: 2.8;">
+              <b>line-height</b>-to specify the space between lines
+            
+            </li>
+            <li  style="  word-spacing: 10px;"><b>word-spacing
+            </b> -to specify the space between the words in a text.</li>
+            <li  style=" white-space: nowrap;"><b>white-space
 
 
-  <footer>
-    <!--use / back to home; use # back to top -->
-    <a href="#">Back to the top</a>
-    <p>contract me at <a href="mailto:random@email.com">my email address</a></p>
-    <p>dial <a href="tel:+1234567890">my phone number</a></p>
-    <p>I start at <time datetime="08:00">8 am</time>and I write code for<time datetime="PT3H">3 hours</time>.</p>
-  </footer>
+            </b> - specifies how white-space inside an element is handled.</li>
+          </ul>
+
+          <h3>Text Shadow</h3>
+          <h4 style="color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">Text-shadow effect!</h4>
+          <h4 style="color: white;
+  text-shadow:  2px 2px 4px #000000;">Text-shadow effect!</h4>
 
 
-</body>
 
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <div class="h2" id="Fonts">
+        <hr />
+        <h2>CSS Fonts</h2>
+        </p>
+        <div>
+          <h3>Generic Font Families</h3>
+          <p>
+            In CSS there are five generic font families:
+          </p>
+          <ol>
+            <li><b>Serif </b>fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+            </li>
+
+            <li><b>Sans-serif</b> fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</li>
+            <li>
+              <b>Monospace</b>fonts - here all the letters have the same fixed width. They create a mechanical look. 
+            
+            </li>
+            <li><b>Cursive
+            </b> fonts imitate human handwriting.</li>
+            <li><b>Fantasy 
+
+            </b> fonts are decorative/playful fonts.
+          </li>
+          </ol>
+
+          <p style="font-family: Times New Roman, Times, serif;">This is a paragraph, shown in the Times New Roman font.</p>
+          <p style="font-family: Arial, Helvetica, sans-serif;">This is a paragraph, shown in the Arial font.</p>
+          <p style="font-family: Lucida Console, Courier New, monospace;">This is a paragraph, shown in the Lucida Console font.
+          </p>
+          
+          
+          <h3>Generic Font Families</h3>
+          <p>there are no 100% completely web safe fonts.Therefore, it is very important to always use fallback fonts. </p>
+          <p>The following list are the best web safe fonts for HTML and CSS:</p>
+          <ul>
+            <li style="font-family: Arial, sans-serif;"><b>
+              Arial (sans-serif)1234567890
+            </b>
+            </li>
+            <li style="font-family: Arial, sans-serif;"><b>Verdana (sans-serif)1234567890
+
+
+            </b>
+            </li>
+            <li style="font-family: Verdana, sans-serif;"><b>Tahoma (sans-serif)1234567890
+
+
+            </b>
+            </li>
+            <li style="font-family: Trebuchet MS, sans-serif;"><b>Trebuchet MS (sans-serif)1234567890
+
+
+            </b>
+            </li>
+            <li style="font-family: Times New Roman, serif;"><b>Times New Roman (serif)1234567890
+
+
+            </b>
+            </li>
+            <li style="font-family: Georgia, serif;"><b>Georgia (serif)1234567890
+
+
+            </b>
+            </li>
+            <li style="font-family: Garamond, serif;"><b>Garamond (serif)1234567890
+
+
+            </b>
+            </li>
+            <li style="font-family: Courier New, monospace;"><b>Courier New (monospace)1234567890
+
+
+            </b>
+            </li>
+            <li style="font-family: Brush Script MT, cursive;"><b>Brush Script MT (cursive)1234567890
+
+            </b>
+            </li>
+            <li style="font-family: Copperplate, Papyrus, fantasy;"><b>Copperplate, Papyrus, fantasy1234567890
+
+            </b>
+            </li>
+
+
+
+
+
+
+
+
+          </ul>
+          <h3>Font Style</h3>
+
+          <p><code>font-style</code>This property has three values:
+
+            normal,
+            italic,
+            oblique -  (oblique is very similar to italic, but less supported)</p>
+
+          <h3>Font Weight</h3>
+          <p><code>font-weight</code>property specifies the weight of a font:normal;lighter;bold;bold;900;</p>
+
+          <h3>Font Variant</h3>
+          <p><code>font-variant</code>property specifies whether or not a text should be displayed in a small-caps font.</p>
+          <p style=" font-variant: normal;" >My name is Hege Refsnes.</p>
+          <p style=" font-variant:  small-caps;" >My name is Hege Refsnes.</p>
+
+          <h3>Font Size</h3>
+          <h3>Google Fonts</h3>
+          <h3>Font Pairing Rules</h3>
+          <h3>The CSS Font Property</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <div class="h2" id="Icons">
+        <hr />
+        <h2>CSS Icons</h2>
+        <div>
+          <h3>Font Awesome 4:</h3>
+          <p><code>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            </code>
+            </p>
+          <p>Some Font Awesome icons:</p>
+          <i class="fa fa-cloud"></i>
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-car"></i>
+          <i class="fa fa-file"></i>
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-500px"></i>
+          <i class="fa fa-apple"></i>
+          <i class="fa fa-at"></i>
+          <i class="fa fa-bluetooth-b"></i>
+
+          
+          <p>Styled Font Awesome icons (size, color, and shadow):</p>
+          <i class="fa fa-cloud" style="font-size:24px;"></i>
+          <i class="fa fa-cloud" style="font-size:36px;"></i>
+          <i class="fa fa-cloud" style="font-size:48px;color:red;"></i>
+          <i class="fa fa-cloud" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
+          
+          <h3>Google Icons</h3>
+          <p><code>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></code></p>
+          <p>Some Google icons:</p>
+          <i class="material-icons">cloud</i>
+          <i class="material-icons">favorite</i>
+          <i class="material-icons">attachment</i>
+          <i class="material-icons">computer</i>
+          <i class="material-icons">traffic</i>
+          <i class="material-icons">border_inner</i>
+          <i class="material-icons">card_giftcard</i>
+          <i class="material-icons">contact_mail</i>
+          <i class="material-icons">hotel</i>
+          <br><br>
+          
+          <p>Styled Google icons (size, color, and shadow):</p>
+          <i class="material-icons" style="font-size:24px;">cloud</i>
+          <i class="material-icons" style="font-size:36px;">cloud</i>
+          <i class="material-icons" style="font-size:48px;color:red;">cloud</i>
+          <i class="material-icons" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;">cloud</i>
+          <br><br>
+          <h3>Font Awesome 5 :</h3>
+          <h4>Sizing Icons</h4>
+          <p>The fa-xs, fa-sm, fa-lg, fa-2x, fa-3x, fa-4x, fa-5x, fa-6x, fa-7x, fa-8x, fa-9x, or fa-10x classes are used to adjust
+            the icon sizes relative to their container.</p>
+          <i class="fas fa-clock fa-xs"></i>
+          <i class="fas fa-clock fa-sm"></i>
+          <i class="fas fa-clock fa-lg"></i>
+          <i class="fas fa-clock fa-2x"></i>
+          <i class="fas fa-clock fa-5x"></i>
+          <i class="fas fa-clock fa-10x"></i>
+          
+          <h4>List Icons</h4>
+          <p>The fa-ul and fa-li classes are used to replace default bullets in unordered lists.</p>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List Item</li>
+            <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>List Item</li>
+            <li><span class="fa-li"><i class="fas fa-square"></i></span>List Item</li>
+          </ul>
+          
+          <h4>Animated Icons</h4>
+          <p>The fa-spin class gets any icon to rotate, and the fa-pulse class gets any icon to rotate with 8 steps.</p>
+          <i class="fas fa-spinner fa-spin"></i>
+          <i class="fas fa-circle-notch fa-spin"></i>
+          <i class="fas fa-sync-alt fa-spin"></i>
+          <i class="fas fa-cog fa-spin"></i>
+          <i class="fas fa-cog fa-pulse"></i>
+          <i class="fas fa-spinner fa-pulse"></i>
+          
+          <h4>Rotated and Flipped Icons</h4>
+          <p>The fa-rotate-* and fa-flip-* classes are used to rotate and flip icons.</p>
+          <i class="fas fa-horse"></i>
+          <i class="fas fa-horse fa-rotate-90"></i>
+          <i class="fas fa-horse fa-rotate-180"></i>
+          <i class="fas fa-horse fa-rotate-270"></i>
+          <i class="fas fa-horse fa-flip-horizontal"></i>
+          <i class="fas fa-horse fa-flip-vertical"></i>
+          
+          <h4>Stacked Icons</h4>
+          <p>To stack multiple icons, use the fa-stack class on the parent, the fa-stack-1x class for the regularly sized icon,
+            and fa-stack-2x for the larger icon.</p>
+          <p>The fa-inverse class can be used as an alternative icon color. You can also add larger icon classes to the parent to
+            further control the sizing.</p>
+          <span class="fa-stack fa-lg">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+          fa-twitter (inverse) on fa-circle (solid)<br>
+          
+          <span class="fa-stack fa-lg">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fab fa-twitter fa-stack-1x"></i>
+          </span>
+          fa-twitter on fa-circle (regular)<br>
+          
+          <span class="fa-stack fa-lg">
+            <i class="fas fa-camera fa-stack-1x"></i>
+            <i class="fas fa-ban fa-stack-2x text-danger" style="color:red;"></i>
+          </span>
+          fa-ban on fa-camera
+          
+          <h4>Fixed Width Icons</h4>
+          <p>The fa-fw class is used to set icons at a fixed width.</p>
+          <p>Fixed Width:</p>
+<div><i class="fas fa-arrows-alt-v fa-fw"></i> Icon 1</div>
+<div><i class="fas fa-band-aid fa-fw"></i> Icon 2</div>
+<div><i class="fab fa-bluetooth-b fa-fw"></i> Icon 3</div>
+
+<p>Without Fixed Width:</p>
+<div><i class="fas fa-arrows-alt-v"></i> Icon 1</div>
+<div><i class="fas fa-band-aid"></i> Icon 2</div>
+<div><i class="fab fa-bluetooth-b"></i> Icon 3</div>
+
+          <h4>Bordered and Pulled Icons</h4>
+          <p>The fa-border, fa-pull-right or fa-pull-left classes are used for pull quotes or article icons.</p>
+          <i class="fas fa-quote-left fa-3x fa-pull-left fa-border"></i>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ <h5>Accessibility Icons</h5>
+ <h5>Alert Icons</h5>
+ <h5>Animal Icons</h5>
+ <h5>Arrow Icons</h5>
+ <h5>Audio&Video Icons</h5>
+ <h5>Automotie Icons</h5>
+ <h5>Autumn Icons</h5>
+ <h5>Beverage Icons</h5>
+ <h5>...</h5>
+ 
+
+          
+          
+          
+          
+          
+          
+          </div>
+          </div>
+          
+          <div class="h2" id="Links">
+            <hr />
+            <h2>CSS Links</h2>
+            <div>
+              <h3>Styling Links</h3>
+              <p>
+                <em>Colors are specified using predefined color names, RGB, HEX, HSL,
+                  RGBA, HSLA values.</em>
+              </p>
+            </div>
+          </div>
+          
+          <div class="h2" id="Colors">
+            <hr />
+            <h2>CSS Colors</h2>
+            <p>
+              <a href="http://127.0.0.1:3000/frontend-developer-study/2-fronter-html.html/#HTMLColors">Jump to HTML Colors</a>
+            </p>
+            <div>
+              <h3>Colors</h3>
+              <p>
+                <em>Colors are specified using predefined color names, RGB, HEX, HSL,
+                  RGBA, HSLA values.</em>
+              </p>
+            </div>
+          </div>
+          
+          <div class="h2" id="Colors">
+            <hr />
+            <h2>CSS Colors</h2>
+            <p>
+              <a href="http://127.0.0.1:3000/frontend-developer-study/2-fronter-html.html/#HTMLColors">Jump to HTML Colors</a>
+            </p>
+            <div>
+              <h3>Colors</h3>
+              <p>
+                <em>Colors are specified using predefined color names, RGB, HEX, HSL,
+                  RGBA, HSLA values.</em>
+              </p>
+            </div>
+          </div>
+          
+          <div class="h2" id="Colors">
+            <hr />
+            <h2>CSS Colors</h2>
+            <p>
+              <a href="http://127.0.0.1:3000/frontend-developer-study/2-fronter-html.html/#HTMLColors">Jump to HTML Colors</a>
+            </p>
+            <div>
+              <h3>Colors</h3>
+              <p>
+                <em>Colors are specified using predefined color names, RGB, HEX, HSL,
+                  RGBA, HSLA values.</em>
+              </p>
+            </div>
+          </div>
+
+      <div class="h2" id="Colors">
+        <hr />
+        <h2>CSS Colors</h2>
+        <p>
+          <a
+            href="http://127.0.0.1:3000/frontend-developer-study/2-fronter-html.html/#HTMLColors"
+            >Jump to HTML Colors</a
+          >
+        </p>
+        <div>
+          <h3>Colors</h3>
+          <p>
+            <em
+              >Colors are specified using predefined color names, RGB, HEX, HSL,
+              RGBA, HSLA values.</em
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="h2" id="Colors">
+        <hr />
+        <h2>CSS Colors</h2>
+        <p>
+          <a
+            href="http://127.0.0.1:3000/frontend-developer-study/2-fronter-html.html/#HTMLColors"
+            >Jump to HTML Colors</a
+          >
+        </p>
+        <div>
+          <h3>Colors</h3>
+          <p>
+            <em
+              >Colors are specified using predefined color names, RGB, HEX, HSL,
+              RGBA, HSLA values.</em
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="h2" id="Colors">
+        <hr />
+        <h2>CSS Colors</h2>
+        <p>
+          <a
+            href="http://127.0.0.1:3000/frontend-developer-study/2-fronter-html.html/#HTMLColors"
+            >Jump to HTML Colors</a
+          >
+        </p>
+        <div>
+          <h3>Colors</h3>
+          <p>
+            <em
+              >Colors are specified using predefined color names, RGB, HEX, HSL,
+              RGBA, HSLA values.</em
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="h2" id="Colors">
+        <hr />
+        <h2>CSS Colors</h2>
+        <p>
+          <a
+            href="http://127.0.0.1:3000/frontend-developer-study/2-fronter-html.html/#HTMLColors"
+            >Jump to HTML Colors</a
+          >
+        </p>
+        <div>
+          <h3>Colors</h3>
+          <p>
+            <em
+              >Colors are specified using predefined color names, RGB, HEX, HSL,
+              RGBA, HSLA values.</em
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!--use / back to home; use # back to top -->
+      <a href="#">Back to the top</a>
+      <p>
+        contract me at <a href="mailto:random@email.com">my email address</a>
+      </p>
+      <p>dial <a href="tel:+1234567890">my phone number</a></p>
+      <p>
+        I start at <time datetime="08:00">8 am</time>and I write code for<time
+          datetime="PT3H"
+          >3 hours</time
+        >.
+      </p>
+    </footer>
+  </body>
 </html>

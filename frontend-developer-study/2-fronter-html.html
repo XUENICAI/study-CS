@@ -7,9 +7,14 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="description" content="study html" />
     <meta name="author" content="shirley" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=1" />
     <title>Html study</title>
     <style>
+      /* If you want your external style sheet styles to be within a cascade layer 
+      but you don't have access to edit the CSS file to put the layer information in it, 
+      you'll want to include the CSS with @import inside a <style>:@import "styles.css" layer(firstLayer); 
+        or  :root {
+    --theme-color: #226DAA;}*/
       body {
         background-color: white;
       }
@@ -110,6 +115,17 @@
     </style>
     <link rel="stylesheet" href="3-styles.css" />
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
+   <!--  <link rel="alternate" href="https://www.machinelearningworkshop.com/fr/" hreflang="fr-FR" />
+    <link rel="alternate" href="https://www.machinelearningworkshop.com/pt/" hreflang="pt-BR" />
+    <link rel="canonical" href="https://www.machinelearning.com" />
+    <script src="js/switch.js" defer></script>
+    <base target="_top" href="https://machinelearningworkshop.com" />
+ 
+ 
+    -->
+
+
+
   </head>
 
   <body>
@@ -122,8 +138,8 @@
       <ul>
         <li><a href="#HTMLIntroduction">Jump to HTML Introduction</a></li>
         <li><a href="#HTMLBasicExamples">Jump to HTML Basic Examples</a></li>
-        <li><a href="#HTMLAttributes">Jump to HTML Attributes</a></li>
-        <li><a href="#HTMLHeadings">Jump to HTML Headings</a></li>
+        <li><a href="#HTMLAttributes">Jump to HTML <b>Attributes</b></a></li>
+        <li><a href="#HTMLHeadings">Jump to HTML <b>Headings</b></a></li>
         <li><a href="#HTMLParagraphs">Jump to HTML Paragraphs</a></li>
         <li><a href="#HTMLStyles">Jump to HTML Styles</a></li>
         <li><a href="#HTMLTextFormatting">Jump to HTML Text Formatting</a></li>
@@ -131,13 +147,13 @@
         <li><a href="#HTMLComments">Jump to HTML Comments</a></li>
         <li><a href="#HTMLColors">Jump to HTML Colors</a></li>
         <li><a href="#HTMLStyles-CSS">Jump to HTML Styles - CSS</a></li>
-        <li><a href="#HTMLLinks">Jump to HTML Links</a></li>
-        <li><a href="#HTMLImages">Jump to HTML Images</a></li>
+        <li><a href="#HTMLLinks">Jump to HTML <b>Links</b></a></li>
+        <li><a href="#HTMLImages">Jump to HTML <b>Images</b></a></li>
         <li><a href="#HTMLFavicon">Jump to HTML Favicon</a></li>
         <li><a href="#HTMLPageTitle">Jump to HTML Page Title</a></li>
-        <li><a href="#HTMLTables">Jump to HTML Tables</a></li>
-        <li><a href="#HTMLLists">Jump to HTML Lists</a></li>
-        <li><a href="#HTMLBlocks">Jump to HTML Blocks</a></li>
+        <li><a href="#HTMLTables">Jump to HTML <b>Tables</b></a></li>
+        <li><a href="#HTMLLists">Jump to HTML <b>Lists</b></a></li>
+        <li><a href="#HTMLBlocks">Jump to HTML Blocks[Semantic HTML]</a></li>
         <li><a href="#HTMLHTMLDivElement">Jump to HTML Div Element</a></li>
         <li><a href="#HTMLclassAttribute">Jump to HTML class Attribute</a></li>
         <li><a href="#HTMLidAttribute">Jump to HTML id Attribute</a></li>
@@ -158,9 +174,9 @@
         </li>
         <li><a href="#HTMLEntities">Jump to HTML Entities</a></li>
         <li><a href="#HTMLSymbols">Jump to HTML Symbols</a></li>
-        <li><a href="#HTMLForms">Jump to HTML Forms&#128513;</a></li>
-        <li><a href="#HTMLMedia">Jump to HTML Media</a></li>
-        <li><a href="#HTMLAPI">Jump to HTML API&#128515;</a></li>
+        <li><a href="#HTMLForms">Jump to HTML <b>Forms</b>&#128513;</a></li>
+        <li><a href="#HTMLMedia">Jump to HTML <b>Media[Audio and Video]</b></a></li>
+        <li><a href="#HTMLAPI">Jump to HTML <b>API</b>&#128515;</a></li>
         <li><a href="#HTMLGraphics">Jump to HTML Graphics&#128514;</a></li>
       </ul>
     </nav>
@@ -253,6 +269,12 @@
         and select "View Page Source". This will open a new tab containing the
         HTML source code of the page.
       </p>
+      <h3>element </h3>
+      <p>opening tags and closing tags</p>
+      <p>replaced & not void element(video,picture,object,iframe) & non-replaced element</p>
+      <p>void element(br,col,embed,hr,img,input,link,meta,source,track,wbr)</p>
+
+
     </section>
 
     <section>
@@ -301,7 +323,15 @@
       </p>
 
       <p title="I'm a tooltip">This is a paragraph.</p>
+      <h3>The ismap Attribute</h3>
+      <p>the ismap attribute is Boolean,and doesn't require a  value</p>
+
+
+
+
     </section>
+
+
 
     <section>
       <hr />
@@ -324,6 +354,22 @@
           <td>Defines HTML headings</td>
         </tr>
       </table>
+      <h3>language Attribute</h3>
+      <p>language:&lt;span lang="fr-fr"><spanlang="fr-fr">Ceci n'est pas une pipe.</span>&lt;span>can be targeted with the attribute and language selectors [lang|="fr"] and :lang(fr). </p>
+      <h3>rel</h3>
+      <p><b>Favicon</b>Use the &lt;link> tag, with the rel="icon" attribute/value pair to identify the favicon to be used for your document.</p>
+      <p>There are two special non-standard kind of icons for Safari browser:<code>apple-touch-icon</code> for iOS devices and <code>mask-icon</code> for pinned tabs on macOS. <code>apple-touch-icon</code> is applied only when the user adds a site to home screen: you can specify multiple icons with different <code>sizes </code>for different devices.<code> mask-icon</code> will only be used if the user pins the tab in desktop Safari: the icon itself should be a monochrome SVG, and the<code>color</code> attribute fills the icon with needed color.</p>
+      <p><code>&lt;link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="/images/mlwicon.png" /></code></p>
+      <p><b>Alternate versions of the site</b>We use the <code>alternate</code> value of the<code>rel</code>  attribute to identify translations, or alternate representations, of the site.
+      </p>
+      <p><code>&lt;link rel="alternate" href="https://www.machinelearningworkshop.com/fr/" hreflang="fr-FR" />
+        <br>  &lt;link rel="alternate" href="https://www.machinelearningworkshop.com/pt/" hreflang="pt-BR" />
+        </code></p>
+        <p><b>Canonical</b>If you create several translations or versions of Machine Learning Workshop, search engines may get confused as to which version is the authoritative source. 
+        </p>
+        <p><code>&lt;link rel="canonical" href="https://www.machinelearning.com" />
+        </code></p>
+
     </section>
 
     <section>
@@ -367,6 +413,9 @@
           Use <b>color</b> for text color
         </li>
         <li style="font-family: verdana">
+          Use <b>font-family</b> for text font
+        </li>
+        <li style="font-family: Arial, Helvetica, sans-serif">
           Use <b>font-family</b> for text font
         </li>
         <li style="font-size: 30%">Use <b>font-size</b> for text size</li>

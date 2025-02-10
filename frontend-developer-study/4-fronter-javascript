@@ -1,18 +1,116 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+  <!-- TODO: 检查代码https://validator.w3.org/-->
+  <!--free image resource https://unsplash.com/   pexels.com   gratisography.com  pixabay.com tinypng.com -->
 
-<h2>What Can JavaScript Do?</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta
+      name="description"
+      content="This page contains all the things I am learning how to create as I learn Javascript"
+    />
+    <meta name="author" content="shirley" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript study</title>
+    <link rel="stylesheet" href="3-styles.css" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap 3 Icons:<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://kit.fontawesome.com/9e53b514fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<p>JavaScript can change HTML attribute values.</p>
+  <body>
+    <buttom class="back"><a href="#">Back to top</a></buttom>
+    <header>
+      <h1>&lt;&lt;&nbsp;&copy;JavaScript study &gt;&gt;</h1>
 
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+      <nav aria-label="Main-Navigation">
+        <ul>
+          <li><a class="active" href="1-fronter-internet.md">HTML Study</a></li>
+          <li><a href="#Introduction">JavaScript Introduction</a></li>
+          <li><a href="#Syntax">JavaScript Syntax</a></li>
+          <li><a href="#Selectors">JavaScript Selectors</a></li>
+          <li><a href="#JavaScript HowToAdd">JavaScript How To Add</a></li>
+          <li><a href="#Colors">JavaScript Colors</a></li>
+          <li><a href="#Backgrounds">JavaScript Backgrounds</a></li>
+          <li><a href="#Borders">JavaScript Borders</a></li>
+          <li><a href="#Margins">JavaScript Margins</a></li>
+          <li><a href="#Padding">JavaScript Padding</a></li>
+          <li><a href="#Height">JavaScript Height, Width and Max-width</a></li>
+          <li><a href="#BoxModel">JavaScript Box Model</a></li>
+          <li><a href="#Outline">JavaScript Outline</a></li>
+          <li><a href="#Text">JavaScript Text</a></li>
+          <li><a href="#Fonts">JavaScript Fonts &#128508;</a></li>
+          <li><a href="#Icons">JavaScript Icons</a></li>
+          <li><a href="#Links">JavaScript Links</a></li>
 
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+          <li><a href="#Outline">CSS Outline</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <main>
+      <!--span and div no meaning-->
+      <div class="h2" id="Introduction">
+        <hr />
+        <h2>JavaScript Introduction</h2>
+        <div>
+          <h3>Developer console</h3>
+          <p>
+            Developer tools allow us to see errors, run commands, examine
+            variables, and much more.
+          </p>
+          <P
+            >They can be opened with <code>F12</code> for most browsers on
+            Windows. Chrome for Mac needs Cmd+Opt+J, Safari: Cmd+Opt+C (need to
+            enable first).
+          </P>
+        </div>
+      </div>
 
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+      <div class="h2" id="Fundamentals">
+        <hr />
+        <h2>JavaScript Fundamentals</h2>
+        <div>
+          <h3>Hello, world!</h3>
+          <p>Before the script...</p>
 
-</body>
+          <script>
+            alert("Hello, world!");
+            2+2
+            10-3
+            document.body,innerHTML="HELLO"
+          </script>
+
+          <p>...After the script.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </main>
+  </body>
 </html>
