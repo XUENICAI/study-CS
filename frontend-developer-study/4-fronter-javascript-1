@@ -1,8 +1,99 @@
 
-
-console.log("Hello, World!");
+//lesson-1
+console.log("Hello, World!","Good job!",2+2,10-3,);
+//document.body.innerHTML='Hello, World';appear in the page
+//alert("Hello, World") appear in popoup
+//lesson-2-numbers and math
 console.log(2+2)
-console.log(10-4)
+console.log(10-3,10*3,10/2,2+2+2,2.2+2.2)
+console.log(10.90*2+20.95)
+console.log(10.90*2+20.95+4.99)
+console.log(1+1*3)
+console.log((1+1)*3)
+console.log(20.95+7.99*2)
+console.log(36.93*0.1)
+console.log((20.95+7.99*2)*0.1)
+console.log(0.1+0.2)
+console.log(20.95+7.99)
+console.log((2095+799)/100)
+console.log(Math.round(2.2))
+console.log(Math.round(2.8))
+console.log(((2095+799)*0.1)/100)
+console.log(Math.round((2095+799)*0.1)/100)
+/* 各种语言的写法
+python：
+result = round((2095 + 799) * 0.1) / 100
+print(result)
+
+C++ ：
+#include <iostream>用于输入输出操作
+#include <cmath>
+
+int main() {
+    double result = std::round((2095 + 799) * 0.1) / 100;
+    std::cout << result << std::endl;输出最终结果
+    return 0;
+}
+
+java:
+public class Main {
+    public static void main(String[] args) {
+        double result = (double) Math.round((2095 + 799) * 0.1) / 100;
+        System.out.println(result);
+    }
+}
+
+Ruby:
+result = ((2095 + 799) * 0.1).round / 100.0
+puts result
+
+Go:
+package main
+import (
+    "fmt"
+    "math"
+)
+func main() {
+    result := math.Round((2095 + 799) * 0.1) / 100
+    fmt.Println(result)
+}
+
+PHP:
+<?php
+$result = round((2095 + 799) * 0.1) / 100;
+echo $result;
+?>
+*/
+//lesson-3-text
+//string
+console.log("hello")
+//alert("hello");  create a popup
+console.log("some"+"text")
+console.log("some"+"more"+"text")
+console.log(typeof 2)
+console.log(typeof "hello")
+console.log("hello"+3)
+console.log("$"+20.93+7.99)
+console.log('$20.95'+7.99)
+console.log("$"+(20.95+7.99))
+console.log("$"+(2095+799)/100)
+console.log("Item("+(1+1)+"):$"+(2095+799)/100)
+console.log("I\'m learning Javascript")
+console.log('some\ntext');
+console.log('Items(${1+1}):$${2095+799)/100}');
+
+//lesson-4-make html,css,javascript together
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+
+
+
 
 
 

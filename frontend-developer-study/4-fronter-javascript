@@ -87,14 +87,82 @@
           <p>Before the script...</p>
 
           <script>
-            alert("Hello, world!");
-            2+2
-            10-3
-            document.body,innerHTML="HELLO"
+           
           </script>
 
           <p>...After the script.</p>
         </div>
+
+            <div class="h2" id="Together">
+              <hr />
+              <h2>JavaScript Together</h2>
+              <div class="Lesson-4">
+                  <h3>Lesson-4</h3>
+                 <!-- <button class="red-button" title="good job" onclick="alert('good job!')"
+                  >hello</button>-->
+                  <button class="red-button" title="good job" 
+                  >hello</button>
+                  
+                  <p>paragraph of<button class="yellow-button">hello</button>text</p>
+        
+                  <script>
+                    //This is a comment.
+                    //This code creates a popup.
+                    //alert( "Hello");
+                    console.log(2+2);
+                    console.log('some'+' text');
+
+                  </script>
+        
+                  
+              </div>
+              <div class="Lesson-5">
+                <h3>Lesson-5-variable</h3>
+                
+                <script>
+                  let variable1 = 3;
+                  console.log(variable1);
+
+                  let calculation=2+2;
+                  console.log(calculation);
+                  console.log(calculation+2);
+
+                  let result= calculation+2;
+                  console.log(result);
+
+                  let message = "hello";
+                  console.log(message);console.log(';');
+
+                  variable1 = 5;
+                  console.log(variable1);
+
+                  variable1=variable1+1;
+                  console.log(variable1);
+
+                </script>
+      
+                
+            </div>
+            <!-- camelCase   PascalCase  kebab-case  snake_case  -->
+            <div class="Lesson-5-example">
+              <script>
+                let cartQuantity = 0;
+            </script>
+            <button onclick="console.log('Cart quantity:'+ cartQuantity);">Show Quantity</button>
+            <button onclick="cartQuantity++;console.log('Cart quantity:'+ cartQuantity);">Add to Cart</button>
+            <button onclick="cartQuantity += 2; console.log('Cart quantity:'+ cartQuantity);">+2</button>
+            <button onclick="cartQuantity += 3; console.log('Cart quantity:'+ cartQuantity);">+3</button>
+            <button onclick="cartQuantity = 0; console.log('Cart was reset.'); console.log('Cart quantity:'+ cartQuantity);">Reset Cart</button>
+            
+
+
+
+
+
+
+
+            </div>
+          </div>
 
 
 

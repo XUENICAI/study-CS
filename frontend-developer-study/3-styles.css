@@ -117,3 +117,18 @@ code {
   background-color: rgb(194, 215, 195);
 
 }
+
+
+
+
+
+/* javascript:lesson-4*/
+
+.red-button{
+  background-color: red;
+  color:white;
+  border:none;
+}
+.yellow-button{
+  background-color: #d6bc3a;
+}
